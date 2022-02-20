@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ab180.demo.mapper.MvcMapper">
+
+	<select id = "getList" resultType = "com.ab180.demo.domain.LncsMng">
+	SELECT SCRB_ID, APP_ID FROM TAM_LCNS_MNG
+    LIMIT 5
+	</select>
+</mapper>
